@@ -12,13 +12,14 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import java.io.UnsupportedEncodingException;
 
 @Slf4j
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/register")
+@CrossOrigin
 public class RegistrationController {
 
     private final UserService userService;
